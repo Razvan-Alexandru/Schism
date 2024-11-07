@@ -148,7 +148,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6201772168399923116}
   - component: {fileID: 2877485637085551872}
-  - component: {fileID: 7976852360938586049}
   - component: {fileID: 313788197562748243}
   m_Layer: 0
   m_Name: Player
@@ -201,20 +200,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7976852360938586049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6343211798169317461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd1224b0cbc2249449a3b5adedf09471, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSensitivity: 0
-  player: {fileID: 0}
 --- !u!114 &313788197562748243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,10 +216,10 @@ MonoBehaviour:
   jumpHeight: 3
   controller: {fileID: 2877485637085551872}
   groundCheck: {fileID: 5636970191088615016}
-  groundDistance: 0
+  groundDistance: 0.2
   groundMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!1 &6579133867362762820
 GameObject:
   m_ObjectHideFlags: 0
