@@ -25,4 +25,9 @@
     border-right-color: rgba(0, 0, 0, 0);
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.1s;
+}
+
+.button:hover {
+    -unity-background-image-tint-color: rgb(109, 122, 130);
 }

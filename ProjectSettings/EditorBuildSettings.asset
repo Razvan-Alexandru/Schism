@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: fcfdb5496e13b4e6cb2d2920161c066c
+  - enabled: 1
+    path: Assets/Scenes/RoamingChasing Scene.unity
+    guid: f6a0242d0e56f9940940f2eabb867a80
   m_configObjects: {}
