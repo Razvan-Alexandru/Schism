@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 789324838}
   - component: {fileID: 789324837}
   - component: {fileID: 789324841}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,9 +272,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 313788197562748243, guid: b5e923aff16470147a7707f619f08ce5, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2950860281988640117, guid: b5e923aff16470147a7707f619f08ce5, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386031234566961005, guid: b5e923aff16470147a7707f619f08ce5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391304018590215446, guid: b5e923aff16470147a7707f619f08ce5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6201772168399923116, guid: b5e923aff16470147a7707f619f08ce5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -319,6 +331,14 @@ PrefabInstance:
     - target: {fileID: 6343211798169317461, guid: b5e923aff16470147a7707f619f08ce5, type: 3}
       propertyPath: m_Name
       value: 'Player '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343211798169317461, guid: b5e923aff16470147a7707f619f08ce5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6579133867362762820, guid: b5e923aff16470147a7707f619f08ce5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6579133867362762820, guid: b5e923aff16470147a7707f619f08ce5, type: 3}
       propertyPath: m_IsActive

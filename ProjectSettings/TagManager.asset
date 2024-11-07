@@ -5,15 +5,18 @@ TagManager:
   serializedVersion: 2
   tags:
   - Monster
+  - Battery
+  - Artifact
+  - Manuscript
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
-  - 
+  - Player
   - 
   - 
   - 
