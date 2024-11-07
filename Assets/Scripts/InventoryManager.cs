@@ -7,7 +7,7 @@ public class InventoryManager : MonoBehaviour
     public float LIGHT_CAP_SEC;
     public float lightTime;
 
-    public int lightPercentage => 100 * (int)(lightTime/LIGHT_CAP_SEC); 
+    public int lightPercentage => (int)(100 * (lightTime/LIGHT_CAP_SEC)); 
 
     public int PUZZLE_OBJECTIVE = 10;
     public int BATTERY_CAP = 5;
@@ -34,12 +34,12 @@ public class InventoryManager : MonoBehaviour
         switch (tag)
         {
             case "Battery":
-            if (batteries < BATTERY_CAP) batteries++; 
+            if (batteries < BATTERY_CAP) IncrementBatteries(); 
 
             break;
 
             case "Manuscript":
-            if (manuscripts < PUZZLE_OBJECTIVE) manuscripts++;
+            if (manuscripts < PUZZLE_OBJECTIVE) IncrementManuscripts();
 
             break;
         }
@@ -51,7 +51,7 @@ public class InventoryManager : MonoBehaviour
         {
             Debug.Log("Consume battery");
             lightTime = LIGHT_CAP_SEC;
-            batteries--;
+            DecrementBatteries();
         } else 
         {
             lightTime = 0;
@@ -66,12 +66,35 @@ public class InventoryManager : MonoBehaviour
         {
             ConsumeBattery();
         }
+        else 
+        {
+            UIManager.Instance.UpdateTorchLife(lightPercentage);
+        }
     }
 
 
     public bool HasBatteryLeft()
     {
         return batteries > 0 || lightTime > 0;
+    }
+
+    void DecrementBatteries()
+    {
+        batteries--;
+        UIManager.Instance.UpdateBatteries(batteries);
+
+    }
+
+    void IncrementBatteries()
+    {
+        batteries++;
+        UIManager.Instance.UpdateBatteries(batteries);
+    }
+
+    void IncrementManuscripts()
+    {
+        manuscripts++;
+        UIManager.Instance.UpdateManuscripts(manuscripts);
     }
     
 

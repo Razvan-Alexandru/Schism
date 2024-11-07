@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8827525049301393825}
   - component: {fileID: 2239859614229314057}
   - component: {fileID: 7418700222757317608}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5636970191088615016}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 601633819393964230}
   - component: {fileID: 4679696060752041070}
   - component: {fileID: 3352895083720175054}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 2877485637085551872}
   - component: {fileID: 313788197562748243}
   - component: {fileID: -8664604384474604606}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 2499696549603517622}
   - component: {fileID: 4394883627167376719}
   - component: {fileID: 2950860281988640117}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}

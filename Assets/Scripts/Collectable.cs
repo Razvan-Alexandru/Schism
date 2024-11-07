@@ -2,14 +2,19 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
+
+    private bool destroyed;
+
     void OnMouseDown()
     {
         // Trigger collection logic
         Collect();
+        OnMouseExit();
     }
 
     void OnMouseOver()
     {
+        if (!destroyed)
         UIManager.Instance.ShowInteraction(gameObject.tag);
     }
 
@@ -23,5 +28,6 @@ public class Collectible : MonoBehaviour
     {
         InventoryManager.Instance.AddToInventory(gameObject.tag); 
         Destroy(gameObject);
+        destroyed = true;
     }
 }
