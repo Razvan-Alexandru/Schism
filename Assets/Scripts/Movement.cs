@@ -57,13 +57,13 @@ public class Movement : MonoBehaviour
         {
             speed = RUNNING_SPEED;
             stamina -= Time.deltaTime;
-            UIManager.Instance.UpdateStaminaBar(staminaPercent);
+            // UIManager.Instance.UpdateStaminaBar(staminaPercent);
         }
         else 
         {
             speed = WALKING_SPEED;
             stamina = stamina < 0 ? 0 : (stamina > MAX_STAMINA ? MAX_STAMINA : stamina + Time.deltaTime);
-            UIManager.Instance.UpdateStaminaBar(staminaPercent);
+            // UIManager.Instance.UpdateStaminaBar(staminaPercent);
         }
 
 
